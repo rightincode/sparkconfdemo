@@ -4,7 +4,7 @@
 
         var processSignUp = function (newCustomer) {
 
-            var customerService = $resource('http://localhost:41364/api/customers', {}, {
+            var customerService = $resource('https://microsoft-apiappf1295bf9878c4823ac2eacbf257ef1e7.azurewebsites.net/api/customers', {}, {
                 query: { method: 'GET', isArray: false },
                 save: { method: 'POST', isArray: false }
             });
